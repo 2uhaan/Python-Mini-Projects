@@ -4,14 +4,14 @@ import random
 number = random.randint(1,10)
 guess = 0
 
-while True:
+while True:                                   #infinte loop
     guess += 1
     user_guess = input("Guess a Number between 1-10 : ")
-    if user_guess.isdigit:      #to avoid Error message we check if its a int or not
+    if user_guess.isdigit:                    #to avoid Error message we check if its a int or not
         user_guess = int(user_guess)
     else:
         print("Invalid")
-        continue                             #this will continue the infinte loop insted of moving to condition below
+        continue                              #this will continue the infinte loop insted of moving to condition below
 
 
     if user_guess == number:
